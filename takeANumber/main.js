@@ -9,10 +9,9 @@ function bandName (name) {
     i++
     let band = i + "." + name;
     bandList.push(band);
-    return band
+    console.log(band);
 }
 
-bandName("red");
-bandName('blue')
-bandName('green');
-console.log(bandList);
+bandName('The Beatles');
+bandName('The Rolling Stones');
+bandName('Led Zeppelin');
