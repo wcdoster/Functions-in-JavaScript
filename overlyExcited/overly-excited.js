@@ -31,7 +31,7 @@ const addExcitement = (theWordArray, char) => {
         // Concatenate the new word onto buildMeUp
         buildMeUp += theWordArray[i] + " ";
         buildSentence += theWordArray[i] + " ";
-        if (i < theWordArray.length){
+        if (i + 1 < theWordArray.length){
             buildMeUp += buildSentence;
         }
     }
