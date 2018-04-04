@@ -31,11 +31,12 @@ const addExcitement = (theWordArray, char) => {
         // Concatenate the new word onto buildMeUp
         buildMeUp += theWordArray[i] + " ";
         buildSentence += theWordArray[i] + " ";
-        buildMeUp += buildSentence;
-        // Print buildMeUp to the console
+        if (i < theWordArray.length){
+            buildMeUp += buildSentence;
+        }
     }
+    // Print buildMeUp to the console
     console.log(buildMeUp);
-
 }
 
 // Invoke the function and pass in the array
