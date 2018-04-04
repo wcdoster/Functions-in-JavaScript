@@ -7,6 +7,8 @@ let otherSentence = ["The", "quick", "brown", "fox", "jumped", "over", "the", "l
     the array as the sole argument. It should iterate over the array
     and output the words to the browser console.
 */
+
+// Function to repeat a string
 function repeat(str, number) {
     let text = "";
     for (let i = 0; i < number; i++) {
@@ -21,16 +23,14 @@ const addExcitement = (theWordArray, char) => {
     let buildMeUp = ""
     let buildSentence = ""
     for (let i = 0; i < theWordArray.length; i++) {
-        // Concatenate the new word onto buildMeUp
         if ((i+1)%3 === 0){
             let num = (i+1)/3;
             
             theWordArray[i]+= repeat(char, num);
         }
-        buildMeUp += theWordArray[i];
-        buildSentence += theWordArray[i];
-        buildSentence += " ";
-        buildMeUp += " ";
+        // Concatenate the new word onto buildMeUp
+        buildMeUp += theWordArray[i] + " ";
+        buildSentence += theWordArray[i] + " ";
         buildMeUp += buildSentence;
         // Print buildMeUp to the console
     }
